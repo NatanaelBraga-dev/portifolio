@@ -1,0 +1,23 @@
+*{
+  background-color: #040404cb;
+}
+
+.App {
+  
+}
+
+.presentation-area{
+  color: white;
+}
+
+.presentation-text{
+  font-family:'JetBrains-Mono';
+}
+
+@font-face {
+  font-family: 'JetBrains-Mono';
+  src: url('./JetBrains_fonte/static/JetBrainsMono-Medium.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
