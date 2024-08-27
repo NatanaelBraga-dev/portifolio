@@ -1,23 +1,24 @@
 *{
-  background-color: #040404cb;
-}
-
-.App {
-  
+  background-color: #040404e0;
 }
 
 .presentation-area{
   color: white;
 }
 
-.presentation-text{
-  font-family:'JetBrains-Mono';
+#presentation-text{
+  font-family:'JetBrains-Mono'; 
 }
 
 @font-face {
   font-family: 'JetBrains-Mono';
-  src: url('./JetBrains_fonte/static/JetBrainsMono-Medium.ttf');
-  font-weight: normal;
-  font-style: normal;
+  src: url('./JetBrains_fonte/static/JetBrainsMono-Regular.ttf');
+}
+
+
+#fotoPerfil{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
 }
 
