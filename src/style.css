@@ -2,12 +2,29 @@
   background-color: #040404e0;
 }
 
-.presentation-area{
+#presentation-area{
   color: white;
+  display: flex;
+}
+
+#presentation-container{
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
 }
 
 #presentation-text{
   font-family:'JetBrains-Mono'; 
+  font-size: 32px;
+  border: 1px solid green;
+}
+
+#presentation-text-2{
+  font-family: 'JetBrains-Mono';
+  font-size: 27px;
+  border: 1px solid green;
+  margin-top: -25px;
 }
 
 @font-face {
@@ -15,10 +32,40 @@
   src: url('./JetBrains_fonte/static/JetBrainsMono-Regular.ttf');
 }
 
+#container-fotoPerfil{
+  border: 1px solid green;
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
 
 #fotoPerfil{
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 126px;
 }
 
+#container-icons{
+  border: 1px solid green;
+  display: flex;
+  height: 64px;
+  width: 150px;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+#icon_github{
+  height: 32px;
+  width: 32px;
+}
+
+#icon_Linkedin{
+  height: 32px;
+  width: 32px;
+}
+
+#icon_instagram{
+  height: 32px;
+  width: 32px;
+}
