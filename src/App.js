@@ -3,6 +3,8 @@ import neymar from './images/neymar.jpg';
 import github_icon from './icons/github_icon.png'
 import Linkedin_icon from './icons/Linkedin_icon.png'
 import instagram_icon from './icons/instagram_icon.png'
+import React from "react";
+import janela_interativa from './janela_interativa'
 
 function App() {
   return (
@@ -21,9 +23,9 @@ function App() {
             <img src={instagram_icon} alt='icone do instagram' id='icon_instagram'></img>
           </div>
         </div>
+        {janela_interativa}
     </div>
   );
 }
 
 export default App;
-

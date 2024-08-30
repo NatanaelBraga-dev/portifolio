@@ -12,7 +12,7 @@
   border: 1px solid green;
   display: flex;
   flex-direction: column;
-  margin-left: 200px;
+  margin-left: 180px;
   width: 500px;
   margin-top: 32px;
   height: 130px;
@@ -31,7 +31,7 @@
   font-family: 'JetBrains-Mono';
   font-size: 29px;
   border: 1px solid green;
-  margin-top: -25px;
+  margin-top: -35px;
   position: relative;
 }
 
@@ -44,8 +44,8 @@
   border: 1px solid green;
   display: flex;
   align-items: center;
-  margin-left: 0px;
-  margin-top: 34px;
+  margin-left: 15px;
+  margin-top: 32px;
   height: 126px;
 }
 
@@ -80,4 +80,4 @@
 #icon_instagram{
   height: 36px;
   width: 36px;
-}
+} 
