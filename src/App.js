@@ -4,7 +4,8 @@ import github_icon from './icons/github_icon.png'
 import Linkedin_icon from './icons/Linkedin_icon.png'
 import instagram_icon from './icons/instagram_icon.png'
 import React from "react";
-import janela_interativa from './janela_interativa'
+import LabTabs, {Theme} from './components/interactive_window/janela_interativa';
+import { ThemeProvider } from '@mui/material/styles';
 
 function App() {
   return (
@@ -23,7 +24,9 @@ function App() {
             <img src={instagram_icon} alt='icone do instagram' id='icon_instagram'></img>
           </div>
         </div>
-        {janela_interativa}
+      <ThemeProvider theme={Theme}> 
+        <LabTabs/>
+      </ThemeProvider>
     </div>
   );
 }
