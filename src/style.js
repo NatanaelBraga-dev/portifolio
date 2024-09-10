@@ -19,68 +19,70 @@ export const GlobalStyle = createGlobalStyle`
 export const PresentationArea = styled.div`
   color: white;
   display: flex;
-  border: 1px solid green;
-`;
+  `;
 
 export const PresentationContainer = styled.div`
-  border: 1px solid green;
   display: flex;
   flex-direction: column;
   margin-left: 180px;
-  width: 500px;
-  margin-top: 32px;
+  top: 25px;
   height: 130px;
   justify-content: center;
+  position: relative;
+  left: 50px;
 `;
 
-export const PresentationText = styled.div`
+export const PresentationText = styled.div
+`
   font-family: 'JetBrains-Mono';
-  font-size: 34px;
-  border: 1px solid green;
+  font-size: 40px;
   position: relative;
-  padding: 0px;
-`;
+  letter-spacing: 3px;
+  text-shadow: 0px 4px 4px #1EF1A5 
+ `;
 
 export const PresentationText2 = styled.div`
   font-family: 'JetBrains-Mono';
-  font-size: 29px;
-  border: 1px solid green;
-  margin-top: 0px;
+  font-size: 32.5px;
   position: relative;
+  letter-spacing: 2px;
+  text-shadow: 0px 4px 4px #1EF1A5 
 `;
 
 export const ContainerFotoPerfil = styled.div`
-  border: 1px solid green;
   display: flex;
   align-items: center;
-  margin-left: 15px;
   margin-top: 32px;
+  margin-bottom: 10px;
   height: 126px;
+  position: relative;
+  left: 180px;
 `;
 
 export const FotoPerfil = styled.img`
   border-radius: 50%;
   width: 130px;
-  height: 126px;
+  height: 130px;
   position: relative;
 `;
 
 export const ContainerIcons = styled.div`
-  border: 1px solid green;
   display: flex;
   height: 64px;
   width: 150px;
   align-items: center;
   justify-content: space-around;
-  margin-left: 510px;
-  margin-top: 40px;
+  position: relative;
+  left: 580px;
+  margin-top: 45px;
 `;
 
 // Styled Components específicos para ícones
 export const GitHubIconStyled = styled(GitHubIcon)`
   color: #FFFFFF;
-  font-size: 36px;
+  font-size: 2.0rem !important;
   cursor: pointer;
+  border-radius: 10px;
   transition: box-shadow 0.4s ease-in-out !important;
 
   &:hover {
@@ -89,8 +91,9 @@ export const GitHubIconStyled = styled(GitHubIcon)`
 
 export const LinkedInIconStyled = styled(LinkedInIcon)`
   color: #FFFFFF;
-  font-size: 36px;
+  font-size: 2.0rem !important; 
   cursor: pointer;
+  border-radius: 10px;
   transition: box-shadow 0.4s ease-in-out !important;
 
   &:hover {
@@ -100,8 +103,9 @@ export const LinkedInIconStyled = styled(LinkedInIcon)`
 
 export const InstagramIconStyled = styled(InstagramIcon)`
   color: #FFFFFF;
-  font-size: 36px;
+  font-size: 2.0rem !important; 
   cursor: pointer;
+  border-radius: 10px;
   transition: box-shadow 0.4s ease-in-out !important;
 
   &:hover {
