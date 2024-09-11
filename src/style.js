@@ -7,13 +7,19 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 export const GlobalStyle = createGlobalStyle`
   * {
     background-color: #040404;
-  }
+    }
 
   @font-face {
     font-family: 'JetBrains-Mono';
     src: url('./JetBrains_fonte/static/JetBrainsMono-Regular.ttf') format('truetype');
   }
 `;  
+
+export const DivApp = styled.div `
+  display: flex;
+  flex-direction: column;
+  height: 200vh; 
+`;
 
 // Styled Components
 export const PresentationArea = styled.div`
@@ -120,4 +126,11 @@ export const InstagramIconStyled = styled(InstagramIcon)`
   }
 `;
 
+export const CenteredContainer = styled.div`
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 95vh; /* Garante 80% da altura da viewport */
+  padding-top: 20px;
+  `;
 

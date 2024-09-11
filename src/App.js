@@ -3,6 +3,7 @@
   import LabTabs, { Theme } from './components/interactive_window/janela_interativa';
   import { ThemeProvider } from '@mui/material/styles'; 
   import { 
+    DivApp,
     GlobalStyle, 
     PresentationArea, 
     PresentationContainer, 
@@ -14,16 +15,18 @@
     GitHubIconStyled, 
     LinkedInIconStyled, 
     InstagramIconStyled,
+    CenteredContainer,
+
   } from './style.js';
 
   function App() {
     return (
-      <div id="App" className='div'>
+      <DivApp>
         <GlobalStyle /> 
         <PresentationArea>
-        <ContainerFotoPerfil>
+          <ContainerFotoPerfil>
             <FotoPerfil src={neymar} alt="foto de perfil" />
-        </ContainerFotoPerfil>
+          </ContainerFotoPerfil>
           <PresentationContainer>
             <PresentationText>Hi! My name is Natanael</PresentationText>
             <PresentationText2>I am a Fullstack Developer</PresentationText2>
@@ -34,10 +37,14 @@
             <InstagramIconStyled />
           </ContainerIcons>
         </PresentationArea>
-        <ThemeProvider theme={Theme} > 
-          <LabTabs/>
+
+        {/* Contêiner centralizado apenas para o LabTabs (CenteredContainer) */}
+        <ThemeProvider theme={Theme}> 
+          <CenteredContainer>
+            <LabTabs/>
+          </CenteredContainer>
         </ThemeProvider>
-      </div>
+      </DivApp>
     );
   }
 

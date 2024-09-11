@@ -43,18 +43,33 @@ export default function LabTabs() {
   };
   
   return (
-    <Box sx={{ width: '100%', typography: 'body1' }}>
+    <Box sx={{ 
+      width: '80%', 
+      typography: 'body1', 
+      border: '1px solid #1EF1A5B3', 
+      borderRadius: '10px', 
+      paddingTop: '10px',
+      boxShadow: '0px 4px 8px rgba(30, 241, 165, 0.7)'
+
+      }}>
       <TabContext value={value}>
-        <Box sx={{ borderBottom: 1, borderColor: 'divider',position: 'relative', paddingTop: '35px' }}>
-          <TabList onChange={handleChange} aria-label="lab API tabs example" >
-            <Tab label="Item One" value="1" sx={{color: '#FFFFFF'}}/>
-            <Tab label="Item Two" value="2" sx={{color: '#FFFFFF'}}/>
-            <Tab label="Item Three" value="3" sx={{color: '#FFFFFF'}}/>
+        <Box sx={{ display:'flex', borderBottom: 1, borderColor: 'divider',position: 'relative', paddingTop: '35px', justifyContent: 'center' }}>
+          <TabList onChange={handleChange} aria-label="lab API tabs example" sx={{
+            display: 'flex',
+            width: '60%', 
+            '& .css-heg063-MuiTabs-flexContainer': {justifyContent: 'space-around',},
+            }}>
+            
+            <Tab label="About" value="1" sx={{color: '#FFFFFF'}}/>
+            <Tab label="Projects" value="2" sx={{color: '#FFFFFF'}}/>
+            <Tab label="Tecnologies" value="3" sx={{color: '#FFFFFF'}}/>
+            <Tab label="Certificates" value="4" sx={{color: '#FFFFFF'}}/>
           </TabList>
         </Box>
         <TabPanel value="1" sx={{color: '#FFFFFF'}}>Item One</TabPanel>
         <TabPanel value="2" sx={{color: '#FFFFFF'}}>Item Two</TabPanel>
         <TabPanel value="3" sx={{color: '#FFFFFF'}}>Item Three</TabPanel>
+        <TabPanel value="4" sx={{color: '#FFFFFF'}}>Item Four</TabPanel>
       </TabContext>
     </Box>
   );
