@@ -11,14 +11,15 @@ export const GlobalStyle = createGlobalStyle`
 
   @font-face {
     font-family: 'JetBrains-Mono';
-    src: url('./JetBrains_fonte/static/JetBrainsMono-Regular.ttf');
+    src: url('./JetBrains_fonte/static/JetBrainsMono-Regular.ttf') format('truetype');
   }
-`;
+`;  
 
 // Styled Components
 export const PresentationArea = styled.div`
   color: white;
   display: flex;
+  
   `;
 
 export const PresentationContainer = styled.div`
@@ -34,20 +35,20 @@ export const PresentationContainer = styled.div`
 
 export const PresentationText = styled.div
 `
-  font-family: 'JetBrains-Mono';
-  font-size: 40px;
+  font-weight: 600;
+  font-family: 'JetBrains-Mono', monospace;
+  font-size: 36px;
   position: relative;
-  letter-spacing: 3px;
-  text-shadow: 0px 4px 4px #1EF1A5 
+  text-shadow: 0px 4px 4px #1EF1A599;
  `;
 
 export const PresentationText2 = styled.div`
-  font-family: 'JetBrains-Mono';
-  font-size: 32.5px;
+  font-family: 'JetBrains-Mono', monospace;
+  font-size: 31.5px;
   position: relative;
-  letter-spacing: 2px;
-  text-shadow: 0px 4px 4px #1EF1A5 
-`;
+  text-shadow: 0px 4px 4px #1EF1A599; 
+  font-weight: 600;
+  `;
 
 export const ContainerFotoPerfil = styled.div`
   display: flex;
@@ -64,7 +65,12 @@ export const FotoPerfil = styled.img`
   width: 130px;
   height: 130px;
   position: relative;
-`;
+  transition: box-shadow 0.3s ease-in-out !important;
+
+  &:hover{
+    box-shadow: 0px 4.2px 6px rgba(30, 241, 165, 0.6) !important;
+  }
+  `;
 
 export const ContainerIcons = styled.div`
   display: flex;
@@ -73,7 +79,7 @@ export const ContainerIcons = styled.div`
   align-items: center;
   justify-content: space-around;
   position: relative;
-  left: 580px;
+  left: 570px;
   margin-top: 45px;
 `;
 
@@ -87,6 +93,7 @@ export const GitHubIconStyled = styled(GitHubIcon)`
 
   &:hover {
     box-shadow: 0px 4px 8px rgba(30, 241, 165, 0.7) !important;
+    }
 `;
 
 export const LinkedInIconStyled = styled(LinkedInIcon)`

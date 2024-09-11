@@ -13,7 +13,7 @@
     ContainerIcons, 
     GitHubIconStyled, 
     LinkedInIconStyled, 
-    InstagramIconStyled 
+    InstagramIconStyled,
   } from './style.js';
 
   function App() {
@@ -34,7 +34,7 @@
             <InstagramIconStyled />
           </ContainerIcons>
         </PresentationArea>
-        <ThemeProvider theme={Theme}> 
+        <ThemeProvider theme={Theme} > 
           <LabTabs/>
         </ThemeProvider>
       </div>
