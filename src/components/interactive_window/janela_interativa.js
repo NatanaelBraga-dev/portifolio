@@ -66,16 +66,16 @@ export default function LabTabs() {
           sx={{
             display: 'flex',
             width: '60%', 
-            '& .css-heg063-MuiTabs-flexContainer': {justifyContent: 'space-around',},
+              '& .css-heg063-MuiTabs-flexContainer': {justifyContent: 'space-around',},
             '& .css-1ir7qwo-MuiButtonBase-root-MuiTab-root':{textTransform: 'none', fontSize: '1.4rem', fontFamily: 'JetBrains Mono, monospace'},
             '& .css-1vrhaxv-MuiTabs-root .css-1ir7qwo-MuiButtonBase-root-MuiTab-root':{fontFamily: 'JetBrains Mono, sans-serif'},
             '& .MuiTabs-indicator': { bottom: '5px', backgroundColor: '#1EF1A5'},
             }}>
-            
-            <Tab label="About" value="1" sx={{color: '#FFFFFF'}}/>
-            <Tab label="Projects" value="2" sx={{color: '#FFFFFF'}}/>
-            <Tab label="Tecnologies" value="3" sx={{color: '#FFFFFF'}}/>
-            <Tab label="Certificates" value="4" sx={{color: '#FFFFFF'}}/>
+  
+            <Tab label="About" value="1" sx={{color: '#FFFFFF'}} disableRipple/>
+            <Tab label="Projects" value="2" sx={{color: '#FFFFFF'}} disableRipple/>
+            <Tab label="Tecnologies" value="3" sx={{color: '#FFFFFF'}} disableRipple/>
+            <Tab label="Certificates" value="4" sx={{color: '#FFFFFF'}} disableRipple/>
           </TabList>
         </Box>
         <TabPanel value="1" sx={{color: '#FFFFFF', fontFamily: 'JetBrains Mono, monospace', fontSize: '1.3rem'}}>
