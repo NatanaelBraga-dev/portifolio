@@ -3,7 +3,6 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
-// Estilo Global
 export const GlobalStyle = createGlobalStyle`
   * {
     background-color: #040404;
@@ -11,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
 
   @font-face {
     font-family: 'JetBrains-Mono';
-    src: url('./JetBrains_fonte/static/JetBrainsMono-Regular.ttf') format('truetype');
+    src: url('./JetBrains_fonte/static/JetBrainsMono-Regular.ttf') format('truetype');  
   }
 `;  
 
@@ -21,11 +20,9 @@ export const DivApp = styled.div `
   height: 200vh; 
 `;
 
-// Styled Components
 export const PresentationArea = styled.div`
   color: white;
-  display: flex;
-  
+  display: flex;  
   `;
 
 export const PresentationContainer = styled.div`
@@ -89,7 +86,6 @@ export const ContainerIcons = styled.div`
   margin-top: 45px;
 `;
 
-// Styled Components específicos para ícones
 export const GitHubIconStyled = styled(GitHubIcon)`
   color: #FFFFFF;
   font-size: 2.0rem !important;
@@ -134,3 +130,6 @@ export const CenteredContainer = styled.div`
   padding-top: 20px;
   `;
 
+  export const containerTranslation = styled.div `
+  margin: 20px;
+  `

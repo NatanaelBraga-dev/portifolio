@@ -78,12 +78,12 @@ export default function LabTabs() {
             <Tab label="Certificates" value="4" sx={{color: '#FFFFFF'}} disableRipple/>
           </TabList>
         </Box>
-        <TabPanel value="1" sx={{color: '#FFFFFF', fontFamily: 'JetBrains Mono, monospace', fontSize: '1.3rem'}}>
+        <TabPanel value="1" sx={{color: '#FFFFFF', fontFamily: 'JetBrains Mono, monospace', fontSize: '1.3rem', justifyContent: 'start', display: 'flex'}}>
           About me:
         </TabPanel>
-        <TabPanel value="2" sx={{color: '#FFFFFF'}}>Item Two</TabPanel>
-        <TabPanel value="3" sx={{color: '#FFFFFF'}}>Item Three</TabPanel>
-        <TabPanel value="4" sx={{color: '#FFFFFF'}}>Item Four</TabPanel>
+        <TabPanel value="2" sx={{color: '#FFFFFF', fontFamily: 'JetBrains Mono, monospace', fontSize: '1.3rem'}}>Item Two</TabPanel>
+        <TabPanel value="3" sx={{color: '#FFFFFF', fontFamily: 'JetBrains Mono, monospace', fontSize: '1.3rem'}}>Item Three</TabPanel>
+        <TabPanel value="4" sx={{color: '#FFFFFF', fontFamily: 'JetBrains Mono, monospace', fontSize: '1.3rem'}}>Item Four</TabPanel>
       </TabContext>
     </Box>
   );
