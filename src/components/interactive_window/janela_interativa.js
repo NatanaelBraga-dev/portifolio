@@ -1,3 +1,4 @@
+// janela_interativa.js
 import React from 'react';
 import { useTranslation } from 'react-i18next'; // Importe o useTranslation
 import Box from '@mui/material/Box';
@@ -41,7 +42,7 @@ export default function LabTabs() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-  
+
   return (
     <Box sx={{ 
       width: '80%', 
@@ -81,12 +82,57 @@ export default function LabTabs() {
         </Box>
 
         {/* Tradução aplicada nos conteúdos das abas */}
-        <TabPanel value="1" sx={{color: '#FFFFFF', fontFamily: 'JetBrains Mono, monospace', fontSize: '1.3rem', justifyContent: 'start', display: 'flex'}}>
+        <TabPanel 
+          value="1" 
+          sx={{ 
+            color: '#FFFFFF', 
+            fontFamily: 'JetBrains Mono, monospace', 
+            fontSize: '1.3rem', 
+            justifyContent: 'start', 
+            display: value === '1' ? 'flex' : 'none' // Condicional para display
+          }}
+        >
           {t('About me:')}
         </TabPanel>
-        <TabPanel value="2" sx={{color: '#FFFFFF', fontFamily: 'JetBrains Mono, monospace', fontSize: '1.3rem', justifyContent: 'start', display: 'flex',}}>Item Two</TabPanel>
-        <TabPanel value="3" sx={{color: '#FFFFFF', fontFamily: 'JetBrains Mono, monospace', fontSize: '1.3rem', justifyContent: 'start', display: 'flex'}}>Item Three</TabPanel>
-        <TabPanel value="4" sx={{color: '#FFFFFF', fontFamily: 'JetBrains Mono, monospace', fontSize: '1.3rem', justifyContent: 'start', display: 'flex'}}>Item Four</TabPanel>
+
+        <TabPanel 
+          value="2" 
+          sx={{ 
+            color: '#FFFFFF', 
+            fontFamily: 'JetBrains Mono, monospace', 
+            fontSize: '1.3rem', 
+            justifyContent: 'start', 
+            display: value === '2' ? 'flex' : 'none' // Condicional para display
+          }}
+        >
+          {t('Projects')}
+        </TabPanel>
+
+        <TabPanel 
+          value="3" 
+          sx={{ 
+            color: '#FFFFFF', 
+            fontFamily: 'JetBrains Mono, monospace', 
+            fontSize: '1.3rem', 
+            justifyContent: 'start', 
+            display: value === '3' ? 'flex' : 'none' // Condicional para display
+          }}
+        >
+          {t('Technologies')}
+        </TabPanel> 
+
+        <TabPanel 
+          value="4" 
+          sx={{ 
+            color: '#FFFFFF', 
+            fontFamily: 'JetBrains Mono, monospace', 
+            fontSize: '1.3rem', 
+            justifyContent: 'start', 
+            display: value === '4' ? 'flex' : 'none' // Condicional para display
+          }}
+        >
+          {t('Certificates')}
+        </TabPanel>
       </TabContext>
     </Box>
   );

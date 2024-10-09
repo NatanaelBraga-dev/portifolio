@@ -88,9 +88,9 @@ function App() {
           <PresentationText2 ref={textRef2}>{t('I am a Fullstack Developer')}</PresentationText2>
         </PresentationContainer>
         <ContainerIcons>
-          <GitHubIconStyled />
-          <LinkedInIconStyled />
-          <InstagramIconStyled />
+         <a href="https://github.com/NatanaelBraga-dev" target="_blank" rel="noopener noreferrer"><GitHubIconStyled /></a> 
+         <a href="https://www.linkedin.com/in/natanael-braga-2149092b6/" target="_blank" rel="noopener noreferrer"> <LinkedInIconStyled /></a>
+         <a href="https://www.instagram.com/natanaelbraga7/?next=%2F" target="_blank" rel="noopener noreferrer"> <InstagramIconStyled /></a>
         </ContainerIcons>
       </PresentationArea>
 

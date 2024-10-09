@@ -1,5 +1,3 @@
-// style.js
-
 import styled, { createGlobalStyle } from 'styled-components';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
