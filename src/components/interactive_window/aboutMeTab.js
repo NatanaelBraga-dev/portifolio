@@ -8,26 +8,32 @@ import {
 } from './tabPanelStyle.js'
 
 function AboutMe(){
+
+    const { t } = useTranslation(); // Use o useTranslation para acessar as traduções
+
     return(
         
         <SobreMimTabPanel style={{flexDirection:'column'}}>
                
              <AboutMeContent>
-                My name is Nathanael, I'm 17 years old and I love technology and innovation.
-                I currently study full-time with an integrated Systems Development course, 
-                Furthermore, I am interning at Tecla T, working on the development team
+                {t(
+                    "My name is Natanael, I'm 17 years old and I love technology and innovation. I currently study full-time with an integrated Systems Development course Furthermore, I am interning at Tecla T, working on the development team."
+                )}
              </AboutMeContent>
              
-             <div style={{color: '#1EF1A5', textDecoration: 'underline', display: 'flex'}}>
-                Experience:
+             <div style={{display:'flex', color: '#1EF1A5', textDecoration:'underline'}}>
+              {t('Experience')}:
              </div>
              
              <ExperienceContent>
-                Furthermore, I have experience with technologies such as React.Js, Python, Javascript and PHP as well as knowledge
-                about code checking tools and platforms such as Git, GitHub and GitLab.
+                {t(
+                    "Furthermore, I have experience with technologies such as React.Js, Python, Javascript and PHP in addition to knowledge about code versioning tools and platforms such as Git, GitHub and GitLab. UI/UX designer skills using the Figma platform"
+                )}
                 <br></br>
-                I also have a technical course in Systems Development and also experience as an intern at the company
-                Tecla T
+                <br></br>
+                {t(
+                    "I also have a technical course in Systems Development and experience as a development intern at the company Tecla T."
+                )}
              </ExperienceContent>
         </SobreMimTabPanel>
     )
