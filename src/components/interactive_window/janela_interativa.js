@@ -9,6 +9,7 @@
   import { createTheme } from '@mui/material/styles';
   import '../../JetBrains_fonte/static/JetBrainsMono-Regular.ttf';
   import AboutMe from './aboutMeTab'
+  import ProjectTab from './projectTab';
 
     export const Theme = createTheme({
     palette:{
@@ -120,7 +121,9 @@
               display: value === '2' ? 'flex' : 'none' // Condicional para display
             }}
           >
-            {t('Projects')}
+
+            
+
           </TabPanel>
 
           <TabPanel 
