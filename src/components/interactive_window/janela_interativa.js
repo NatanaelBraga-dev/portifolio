@@ -121,8 +121,10 @@
               display: value === '2' ? 'flex' : 'none' // Condicional para display
             }}
           >
-
             
+            <ProjectTab style={{height:'300px'}}>
+
+            </ProjectTab>
 
           </TabPanel>
 
