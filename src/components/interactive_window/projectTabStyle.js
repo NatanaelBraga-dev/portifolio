@@ -15,17 +15,43 @@ export const MainDiv = styled.div`
     background-color: #f0f0f0;
 `;
 
+export const ColumnDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    heigh: auto;
+`
+
 export const AnimatedDiv = styled.div`
     background-color: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        animation: float 2s ease-in-out infinite; /* Adiciona a animação de flutuação */
+    }
 
     &:hover > .description {
         opacity: 1; /* Torna visível */
         visibility: visible; /* Exibe o elemento */
     }
+
+    @keyframes float {
+        0% {
+            transform: translateY(0); /* Posição inicial */
+        }
+        50% {
+            transform: translateY(-10px); /* Move para cima */
+        }
+        100% {
+            transform: translateY(0); /* Retorna à posição inicial */
+        }
+    }
 `;
+
 
 export const DivImage = styled.div`
     width: auto;
@@ -39,11 +65,12 @@ export const DivDescription = styled.div`
     background-color: transparent;
     color: white;
     width: 100%; 
+    display: flex;
     padding: 10px;
     opacity: 0; /* Invisível inicialmente */
     visibility: hidden; /* Oculta o elemento */
     transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; /* Transição suave */
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 
     /* Adicionamos uma classe para facilitar a seleção */
@@ -52,17 +79,23 @@ export const DivDescription = styled.div`
     }
 `;
 
-export const IconsProject1 = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: center; /* Centraliza os ícones */
-`;
-
 export const ParagraphDescription1 = styled.p`
     background-color: transparent;
     font-family: 'JetBrains-Mono';
     font-size: 1.2rem;
     color: white;
-    margin-top: 10px;
+    margin-top: 30px;
 `;
 
+export const TechnologiesIconsDiv = styled.div`
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid #1EF1A5B3;
+    border-radius: 10px;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    
+`
