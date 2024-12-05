@@ -10,6 +10,7 @@
   import '../../JetBrains_fonte/static/JetBrainsMono-Regular.ttf';
   import AboutMe from './aboutMeTab'
   import ProjectTab from './projectTab';
+  import TechnologiesTab from './technologiesTab';
 
     export const Theme = createTheme({
     palette:{
@@ -81,8 +82,8 @@
               {/* Tradução aplicada nas labels */}
               <Tab label={t('About')} value="1" sx={{color: '#FFFFFF'}} disableRipple/>
               <Tab label={t('Projects')} value="2" sx={{color: '#FFFFFF'}} disableRipple/>
-              <Tab label={t('Certificates')} value="3" sx={{color: '#FFFFFF'}} disableRipple/>
-              <Tab label={t('Technologies')} value="4" sx={{color: '#FFFFFF'}} disableRipple/>
+              <Tab label={t('Technologies')} value="3" sx={{color: '#FFFFFF'}} disableRipple/>
+              <Tab label={t('Certificates')} value="4" sx={{color: '#FFFFFF'}} disableRipple/>
             </TabList> 
           </div>
         
@@ -138,11 +139,15 @@
               color: '#FFFFFF', 
               fontFamily: 'JetBrains Mono, monospace', 
               fontSize: '1.3rem', 
-              justifyContent: 'start', 
+              justifyContent: 'center', 
               display: value === '3' ? 'flex' : 'none' // Condicional para display
             }}
           >
-            {t('Certificates')}
+
+            <TechnologiesTab>
+
+            </TechnologiesTab>
+
           </TabPanel> 
 
           <TabPanel 
@@ -155,7 +160,7 @@
               display: value === '4' ? 'flex' : 'none' // Condicional para display
             }}
           >
-            {t('Technologies')}
+            {t('Certificates')}
           </TabPanel>
         </TabContext>
       </Box>
