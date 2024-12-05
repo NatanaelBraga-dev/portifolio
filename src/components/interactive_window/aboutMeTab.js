@@ -14,7 +14,9 @@ function AboutMe(){
     return(
         
         <SobreMimTabPanel style={{flexDirection:'column'}}>
-               
+            <div style={{display:'flex', color: '#1EF1A5', textDecoration:'underline'}}>
+                {t('About me:')}
+            </div>
              <AboutMeContent>
                 {t(
                     "My name is Natanael, I'm 17 years old and I love technology and innovation. I currently study full-time with an integrated Systems Development course Furthermore, I am interning at Tecla T, working on the development team."

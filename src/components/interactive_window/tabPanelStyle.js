@@ -13,7 +13,6 @@ export const SobreMimTabPanel = styled.div `
     display: flex;
     color: white;
     font-family: 'JetBrains-Mono', monospace;
-    margin-left: 20px
 `
 
 export const AboutMeContent = styled.div`
@@ -24,11 +23,9 @@ export const AboutMeContent = styled.div`
     width: fit-content;
     align-items: flex-start; 
     text-align: left; 
-    margin-left: 0px; 
     white-space: pre-wrap;
-    margin-right: 50px;
-    margin-top: 10px;
-    margin-bottom: 20px;  
+    padding-top: 10px;
+    padding-bottom: 20px;
 `
 
 export const ExperienceContent = styled.div `
@@ -39,10 +36,7 @@ export const ExperienceContent = styled.div `
     width: fit-content;
     align-items: flex-start; 
     text-align: left; 
-    margin-left: 0; 
-    white-space: pre-wrap;
-    margin-top: 10px;
-    margin-right: 60px; 
-    margin-bottom: 20px;
+    padding-top: 10px;
+    white-space: pre-wrap; 
     flex-direction: row;
     `

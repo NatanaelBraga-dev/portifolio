@@ -65,12 +65,13 @@
             paddingTop: '35px', 
             justifyContent: 'center'
           }}>
-            <TabList 
+          <div style={{display:'flex', justifyContent:'center'}} className='HeaderComponent'>
+          <TabList 
               onChange={handleChange} 
               aria-label="lab API tabs example"
               sx={{
                 display: 'flex',
-                width: '60%', 
+                width: '100%', 
                 '& .css-heg063-MuiTabs-flexContainer': {justifyContent: 'space-around',},
                 '& .css-1ir7qwo-MuiButtonBase-root-MuiTab-root':{textTransform: 'none', fontSize: '1.4rem', fontFamily: 'JetBrains Mono, monospace'},
                 '& .css-1vrhaxv-MuiTabs-root .css-1ir7qwo-MuiButtonBase-root-MuiTab-root':{fontFamily: 'JetBrains Mono, sans-serif'},
@@ -82,17 +83,18 @@
               <Tab label={t('Projects')} value="2" sx={{color: '#FFFFFF'}} disableRipple/>
               <Tab label={t('Certificates')} value="3" sx={{color: '#FFFFFF'}} disableRipple/>
               <Tab label={t('Technologies')} value="4" sx={{color: '#FFFFFF'}} disableRipple/>
-            </TabList>
+            </TabList> 
+          </div>
+        
           </Box>
 
           {/* Tradução aplicada nos conteúdos das abas */}
+          <div className='bodyAbout' style={{display:'flex', justifyContent:"center"}}>
           <TabPanel 
             value="1" 
             sx={{ 
               overflowX: 'hidden',
-              marginRight: '100px',
-              marginTop: '20px',
-              marginLeft: '100px',
+              marginTop: '40px',
               color: '#FFFFFF', 
               fontFamily: 'JetBrains Mono, monospace', 
               fontSize: '1.3rem', 
@@ -102,31 +104,33 @@
               height: 'auto'
             }}
           >
-            <div style={{display:'flex', color: '#1EF1A5', textDecoration:'underline', marginLeft: '20px'}}>
-              {t('About me:')}
-            </div>
 
-            <div style={{display:'flex', justifyContent: 'start'}}>
+            <div style={{display:'flex', justifyContent: 'center'}}>
               <AboutMe/>  
             </div>
           </TabPanel>
-            
+          </div>
+          
+          <div className='bodyProjects' style={{display:'flex',justifyContent:'center', flexDirection:'row', marginTop:'40px'}} >
           <TabPanel 
             value="2" 
             sx={{ 
+              width:'1200px',
               color: '#FFFFFF', 
               fontFamily: 'JetBrains Mono, monospace', 
               fontSize: '1.3rem', 
-              justifyContent: 'start', 
+              justifyContent: 'center', 
               display: value === '2' ? 'flex' : 'none' // Condicional para display
             }}
           >
             
-            <ProjectTab style={{height:'300px'}}>
+            <ProjectTab style={{}}>
 
             </ProjectTab>
 
           </TabPanel>
+          </div>
+        
 
           <TabPanel 
             value="3" 

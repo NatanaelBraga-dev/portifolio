@@ -118,7 +118,7 @@ export const InstagramIconStyled = styled(InstagramIcon)`
   border-radius: 10px;
   transition: box-shadow 0.4s ease-in-out !important;
 
-  &:hover {
+  &:hover { 
     box-shadow: 0px 4px 8px rgba(30, 241, 165, 0.7) !important;
   }
 `;
@@ -137,6 +137,6 @@ export const ContainerTranslation = styled.div`
   justify-content: end;
   width: fit-content;
   position: fixed;
-  left: 1400px;
-  top: 600px
+  left: 1750px;
+  top: 700px
 `;
