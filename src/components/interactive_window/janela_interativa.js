@@ -11,6 +11,7 @@
   import AboutMe from './aboutMeTab'
   import ProjectTab from './projectTab';
   import TechnologiesTab from './technologiesTab';
+  import CertificatesTab from './certificatesTab';
 
     export const Theme = createTheme({
     palette:{
@@ -160,7 +161,10 @@
               display: value === '4' ? 'flex' : 'none' // Condicional para display
             }}
           >
-            {t('Certificates')}
+            <CertificatesTab>
+
+            </CertificatesTab>
+            
           </TabPanel>
         </TabContext>
       </Box>

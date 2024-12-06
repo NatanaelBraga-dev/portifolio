@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle, keyframes } from 'styled-components';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -139,4 +139,15 @@ export const ContainerTranslation = styled.div`
   position: fixed;
   left: 1750px;
   top: 700px
+`;
+
+// Animação de digitação
+const typing = keyframes`
+  from { width: 0; }
+  to { width: 100%; }
+`;
+
+const blinkCaret = keyframes`
+  from, to { border-color: transparent; }
+  50% { border-color: orange; }
 `;
