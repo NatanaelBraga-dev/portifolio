@@ -78,6 +78,9 @@
                 '& .css-1ir7qwo-MuiButtonBase-root-MuiTab-root':{textTransform: 'none', fontSize: '1.4rem', fontFamily: 'JetBrains Mono, monospace'},
                 '& .css-1vrhaxv-MuiTabs-root .css-1ir7qwo-MuiButtonBase-root-MuiTab-root':{fontFamily: 'JetBrains Mono, sans-serif'},
                 '& .MuiTabs-indicator': { bottom: '5px', backgroundColor: '#1EF1A5'},
+                '& .css-1t3768g': {fontFamily: 'JetBrains Mono, sans-serif'},
+                '& .css-1jzev9b': {fontFamily: 'JetBrains Mono, sans-serif'},
+                '& .css-mkx4pv-MuiTabs-root': {textTransform: 'none', fontSize: '1.4rem', fontFamily: 'JetBrains Mono, monospace'},
               }}
             >
               {/* Tradução aplicada nas labels */}
