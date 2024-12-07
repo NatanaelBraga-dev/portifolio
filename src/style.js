@@ -36,6 +36,7 @@ export const DivApp = styled.div`
   display: flex;
   flex-direction: column;
   height: 200vh;
+  font-family: 'JetBrains-Mono', monospace;
 `;
 
 export const PresentationArea = styled.div`

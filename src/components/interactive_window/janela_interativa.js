@@ -27,6 +27,7 @@
     },
     typography:{
       fontSize: 16,
+      fontFamily: 'JetBrains Mono, monospace',
     },
     breakpoints: {
       values: {
