@@ -13,32 +13,42 @@
   import TechnologiesTab from './technologiesTab';
   import CertificatesTab from './certificatesTab';
 
-    export const Theme = createTheme({
-    palette:{
-      primary:{
+  export const Theme = createTheme({
+    palette: {
+      primary: {
         main: '#FFFFFF',
       },
-      background:{
-        default:'#FFFFFF',
+      background: {
+        default: '#FFFFFF',
       },
-      text:{
-        primary: '#FFFFFF'
+      text: {
+        primary: '#FFFFFF',
       },
     },
-    typography:{
+    typography: {
       fontSize: 16,
-      textTransform: 'none',
+      fontFamily: 'JetBrains Mono, monospace',
     },
-    breakpoints: {
-      values: {
-        xs: 0,
-        sm: 600,
-        md: 960,
-        lg: 1280,
-        xl: 1920,
+    components: {
+      MuiTab: {
+        styleOverrides: {
+          root: {
+            textTransform: 'none',
+            fontSize: '1.4rem',
+            fontFamily: 'JetBrains Mono, monospace',
+          },
+        },
+      },
+      MuiTabs: {
+        styleOverrides: {
+          indicator: {
+            backgroundColor: '#1EF1A5',
+          },
+        },
       },
     },
-  }); 
+  });
+  
 
   export default function LabTabs() {
     const { t } = useTranslation(); // Use o useTranslation para acessar as traduções
@@ -81,7 +91,7 @@
                 '& .MuiTabs-indicator': { bottom: '5px', backgroundColor: '#1EF1A5'},
                 '& .css-1t3768g':{textTransform: 'none', fontSize: '1.4rem', fontFamily: 'JetBrains Mono, monospace'},
                 '& .css-1jzev9b': {textTransform: 'none', fontSize: '1.4rem', fontFamily: 'JetBrains Mono, monospace'},
-                '& .css-mkx4pv-MuiTabs-root': {textTransform: 'none', fontSize: '1.3rem', fontFamily: 'JetBrains Mono, monospace'},
+                '& .css-mkx4pv-MuiTabs-root': {textTransform: 'none', fontSize: '1.4rem', fontFamily: 'JetBrains Mono, monospace'},
               }}
             >
               {/* Tradução aplicada nas labels */}
