@@ -42,7 +42,7 @@ function CertificatesTab() {
                             />
                         </DivImage>
                         <DivDescription style={{ width: '370px', height: '70px', borderRadius: '10px' }} className="description">
-                            <ParagraphDescription1>Projeto de uma calculadora simples</ParagraphDescription1>
+                            <ParagraphDescription1>Certificado da Hashtag</ParagraphDescription1>
                         </DivDescription>
                     </AnimatedDiv>
 
@@ -56,7 +56,7 @@ function CertificatesTab() {
                             />
                         </DivImage>
                         <DivDescription style={{ width: '370px', height: '70px', borderRadius: '10px' }} className="description">
-                            <ParagraphDescription1>Interface de Login</ParagraphDescription1>
+                            <ParagraphDescription1>Certificado da AWS</ParagraphDescription1>
                         </DivDescription>
                     </AnimatedDiv>
                 </ColumnDiv>
@@ -72,7 +72,7 @@ function CertificatesTab() {
                             />
                         </DivImage>
                         <DivDescription style={{ width: '370px', height: '70px', borderRadius: '10px' }} className="description">
-                            <ParagraphDescription1>Cadastro e Login funcional</ParagraphDescription1>
+                            <ParagraphDescription1>Certificado do curso de chatbots</ParagraphDescription1>
                         </DivDescription>
                     </AnimatedDiv>
 
@@ -86,7 +86,7 @@ function CertificatesTab() {
                             />
                         </DivImage>
                         <DivDescription style={{ width: '370px', height: '70px', borderRadius: '10px' }} className="description">
-                            <ParagraphDescription1>Em construção...</ParagraphDescription1>
+                            <ParagraphDescription1>Certificado da feira de Ciências</ParagraphDescription1>
                         </DivDescription>
                     </AnimatedDiv>
                 </ColumnDiv>
