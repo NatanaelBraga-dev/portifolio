@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import calculadora from '../../images/calculadora.png';
-import print_tela_cadastro from '../../images/print_tela_cadastro.png';
-import InterfaceLogin from '../../images/InterfaceLogin.png';
+import certificadoIFCE from '../../images/certificado_IFCE.jpg'
+import certificadoAWS from '../../images/certificado_AWS.jpg'
+import CertificadoHashtag from '../../images/certificado_Hashtag.jpg'
+import certificadoCearaCientifico from '../../images/certificado_Ceara_Cientifico.jpg'
 import {
     MainDiv,
     DivImage,
@@ -34,8 +35,8 @@ function CertificatesTab() {
                     <AnimatedDiv>
                         <DivImage>
                             <img
-                                onClick={() => handleImageClick(calculadora)}
-                                src={calculadora}
+                                onClick={() => handleImageClick(CertificadoHashtag)}
+                                src={CertificadoHashtag}
                                 style={{ width: '350px', borderRadius: '10px', border: '1px solid #1EF1A5B3' }}
                                 alt="Calculadora"
                             />
@@ -48,9 +49,9 @@ function CertificatesTab() {
                     <AnimatedDiv>
                         <DivImage>
                             <img
-                                onClick={() => handleImageClick(InterfaceLogin)}
-                                src={InterfaceLogin}
-                                style={{ width: '350px', borderRadius: '10px', border: '1px solid #1EF1A5B3', height: '198px' }}
+                                onClick={() => handleImageClick(certificadoAWS)}
+                                src={certificadoAWS}
+                                style={{ width: '350px', borderRadius: '10px', border: '1px solid #1EF1A5B3' }}
                                 alt="Interface de Login"
                             />
                         </DivImage>
@@ -64,9 +65,9 @@ function CertificatesTab() {
                     <AnimatedDiv>
                         <DivImage>
                             <img
-                                onClick={() => handleImageClick(print_tela_cadastro)}
-                                src={print_tela_cadastro}
-                                style={{ width: '350px', borderRadius: '10px', border: '1px solid #1EF1A5B3' }}
+                                onClick={() => handleImageClick(certificadoIFCE)}
+                                src={certificadoIFCE}
+                                style={{ width: '350px', borderRadius: '10px', border: '1px solid #1EF1A5B3', height:'272px' }}
                                 alt="Cadastro e Login funcional"
                             />
                         </DivImage>
@@ -76,8 +77,13 @@ function CertificatesTab() {
                     </AnimatedDiv>
 
                     <AnimatedDiv>
-                        <DivImage style={{ width: '350px', borderRadius: '10px', border: '1px solid #1EF1A5B3', height: '198px' }}>
-                            <h1 style={{ paddingTop: '40px' }}>?</h1>
+                    <DivImage>
+                            <img
+                                onClick={() => handleImageClick(certificadoCearaCientifico)}
+                                src={certificadoCearaCientifico}
+                                style={{ width: '350px', borderRadius: '10px', border: '1px solid #1EF1A5B3', height:'272px' }}
+                                alt="Cadastro e Login funcional"
+                            />
                         </DivImage>
                         <DivDescription style={{ width: '370px', height: '70px', borderRadius: '10px' }} className="description">
                             <ParagraphDescription1>Em construção...</ParagraphDescription1>

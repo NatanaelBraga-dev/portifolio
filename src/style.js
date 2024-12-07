@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle, keyframes } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -11,6 +11,24 @@ export const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'JetBrains-Mono';
     src: url('./JetBrains_fonte/static/JetBrainsMono-Regular.ttf') format('truetype');
+  }
+
+  /* Estilização da scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px; /* Espessura da scrollbar */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #555; /* Cor do "thumb" (parte rolável) */
+    border-radius: 40px; /* Arredondamento para suavizar */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #777; /* Cor do "thumb" ao passar o mouse */
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #222; /* Cor do trilho da scrollbar */
   }
 `;
 
@@ -139,15 +157,4 @@ export const ContainerTranslation = styled.div`
   position: fixed;
   left: 1750px;
   top: 700px
-`;
-
-// Animação de digitação
-const typing = keyframes`
-  from { width: 0; }
-  to { width: 100%; }
-`;
-
-const blinkCaret = keyframes`
-  from, to { border-color: transparent; }
-  50% { border-color: orange; }
 `;
