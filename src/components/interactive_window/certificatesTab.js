@@ -3,6 +3,7 @@ import certificadoIFCE from '../../images/certificado_IFCE.jpg'
 import certificadoAWS from '../../images/certificado_AWS.jpg'
 import CertificadoHashtag from '../../images/certificado_Hashtag.jpg'
 import certificadoCearaCientifico from '../../images/certificado_Ceara_Cientifico.jpg'
+import CloseIcon from '@mui/icons-material/Close';
 import {
     MainDiv,
     DivImage,
@@ -42,7 +43,7 @@ function CertificatesTab() {
                             />
                         </DivImage>
                         <DivDescription style={{ width: '370px', height: '70px', borderRadius: '10px' }} className="description">
-                            <ParagraphDescription1>Certificado da Hashtag</ParagraphDescription1>
+                            <ParagraphDescription1>Hashtag Certificate</ParagraphDescription1>
                         </DivDescription>
                     </AnimatedDiv>
 
@@ -56,7 +57,7 @@ function CertificatesTab() {
                             />
                         </DivImage>
                         <DivDescription style={{ width: '370px', height: '70px', borderRadius: '10px' }} className="description">
-                            <ParagraphDescription1>Certificado da AWS</ParagraphDescription1>
+                            <ParagraphDescription1>AWS Certificate</ParagraphDescription1>
                         </DivDescription>
                     </AnimatedDiv>
                 </ColumnDiv>
@@ -72,7 +73,7 @@ function CertificatesTab() {
                             />
                         </DivImage>
                         <DivDescription style={{ width: '370px', height: '70px', borderRadius: '10px' }} className="description">
-                            <ParagraphDescription1>Certificado do curso de chatbots</ParagraphDescription1>
+                            <ParagraphDescription1>Chatbot Course Certificate</ParagraphDescription1>
                         </DivDescription>
                     </AnimatedDiv>
 
@@ -86,7 +87,7 @@ function CertificatesTab() {
                             />
                         </DivImage>
                         <DivDescription style={{ width: '370px', height: '70px', borderRadius: '10px' }} className="description">
-                            <ParagraphDescription1>Certificado da feira de Ciências</ParagraphDescription1>
+                            <ParagraphDescription1>Science fair certificate</ParagraphDescription1>
                         </DivDescription>
                     </AnimatedDiv>
                 </ColumnDiv>
@@ -98,7 +99,7 @@ function CertificatesTab() {
                     style={isClosing ? { animation: 'fadeOut 0.3s ease-in-out forwards' } : {}}
                 >
                     <img src={maximizedImage} alt="Imagem Maximizada" />
-                    <CloseButton onClick={closeMaximizedImage}>X</CloseButton>
+                    <CloseButton onClick={closeMaximizedImage}><CloseIcon></CloseIcon></CloseButton>
                 </MaximizedImageContainer>
             )}
         </>

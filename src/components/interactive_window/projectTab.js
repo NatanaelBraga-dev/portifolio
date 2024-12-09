@@ -33,8 +33,8 @@ function ProjectTab() {
                     </DivImage>
 
                     <DivDescription style={{width:'370px', height: '70px', borderRadius:'10px'}} className="description">
-                        <ParagraphDescription1>
-                            Projeto de uma calculadora simples 
+                        <ParagraphDescription1>    
+                        simple calculator software 
                         </ParagraphDescription1>
                         <TechnologiesIconsDiv>
                             <img src={Iconhtml} style={{height:'24px'}}></img>
@@ -51,7 +51,7 @@ function ProjectTab() {
 
                     <DivDescription style={{width:'370px', height: '70px', borderRadius:'10px'}} className="description">
                         <ParagraphDescription1>
-                            Interface de Login
+                            login interface
                         </ParagraphDescription1>
                         <TechnologiesIconsDiv>
                             <img src={Iconreact} style={{height:'24px'}}></img>
@@ -68,7 +68,7 @@ function ProjectTab() {
                 </DivImage>
                 <DivDescription style={{width:'370px', height: '70px', borderRadius:'10px'}} className="description">
                     <ParagraphDescription1>
-                        Cadastro e Login funcional
+                        registration and functional login
                     </ParagraphDescription1>
                     <TechnologiesIconsDiv>
                         <img src={Iconhtml} style={{height:'24px'}}></img>
@@ -85,7 +85,7 @@ function ProjectTab() {
                     </DivImage>
                     <DivDescription style={{width:'370px', height: '70px', borderRadius:'10px'}} className="description">
                         <ParagraphDescription1>
-                            Em construção...
+                            developing...
                         </ParagraphDescription1>
                         <TechnologiesIconsDiv>
                             <img src={Iconreact} style={{height:'24px'}}></img>

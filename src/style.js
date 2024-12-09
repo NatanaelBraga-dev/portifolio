@@ -152,11 +152,12 @@ export const CenteredContainer = styled.div`
 `;
 
 export const ContainerTranslation = styled.div`
-  margin: 20px;
   display: flex;
-  justify-content: end;
-  width: fit-content;
+  justify-content: flex-end;
+  width: 100%;
   position: fixed;
-  left: 1750px;
-  top: 700px
+  bottom: 13%; /* Responsivo - distância do botão em relação ao fundo */
+  right: 2%;  /* Responsivo - distância em relação à lateral direita */
+  z-index: 10; /* Garante que fique visível */
+  background-color: transparent;
 `;

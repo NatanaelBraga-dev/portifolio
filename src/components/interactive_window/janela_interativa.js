@@ -1,4 +1,3 @@
-  // janela_interativa.js
   import React from 'react';
   import { useTranslation } from 'react-i18next'; // Importe o useTranslation
   import Box from '@mui/material/Box';
@@ -50,13 +49,16 @@
   });
   
 
-  export default function LabTabs() {
-    const { t } = useTranslation(); // Use o useTranslation para acessar as traduções
+  export default function LabTabs({ onTabChange }) {
+    const { t } = useTranslation(); // Traduções
     const [value, setValue] = React.useState('1');
-
+  
     const handleChange = (event, newValue) => {
       setValue(newValue);
-    };
+      if (onTabChange) {
+        onTabChange(newValue); // Chama a função do App.js quando a aba muda
+      }
+    }
 
     return (
       <Box sx={{ 
@@ -67,7 +69,8 @@
         border: '1px solid #1EF1A5B3', 
         borderRadius: '10px', 
         paddingTop: '10px',
-        boxShadow: '0px 4px 8px rgba(30, 241, 165, 0.7)'
+        boxShadow: '0px 4px 8px rgba(30, 241, 165, 0.7)',
+        zIndex: '2',
       }}>
         <TabContext value={value} >
           <Box sx={{ 

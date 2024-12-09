@@ -39,4 +39,5 @@ export const ExperienceContent = styled.div `
     padding-top: 10px;
     white-space: pre-wrap; 
     flex-direction: row;
+    flex-direction: column;
     `
