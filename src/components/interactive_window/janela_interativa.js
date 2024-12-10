@@ -1,5 +1,4 @@
   import React from 'react';
-  import { useTranslation } from 'react-i18next'; // Importe o useTranslation
   import Box from '@mui/material/Box';
   import Tab from '@mui/material/Tab';
   import TabContext from '@mui/lab/TabContext';
@@ -50,7 +49,6 @@
   
 
   export default function LabTabs({ onTabChange }) {
-    const { t } = useTranslation(); // Traduções
     const [value, setValue] = React.useState('1');
   
     const handleChange = (event, newValue) => {
@@ -98,10 +96,10 @@
               }}
             >
               {/* Tradução aplicada nas labels */}
-              <Tab label={t('About')} value="1" sx={{color: '#FFFFFF'}} disableRipple/>
-              <Tab label={t('Projects')} value="2" sx={{color: '#FFFFFF'}} disableRipple/>
-              <Tab label={t('Technologies')} value="3" sx={{color: '#FFFFFF'}} disableRipple/>
-              <Tab label={t('Certificates')} value="4" sx={{color: '#FFFFFF'}} disableRipple/>
+              <Tab label='About' value="1" sx={{color: '#FFFFFF'}} disableRipple/>
+              <Tab label='Projects' value="2" sx={{color: '#FFFFFF'}} disableRipple/>
+              <Tab label='Technologies' value="3" sx={{color: '#FFFFFF'}} disableRipple/>
+              <Tab label='Certificates' value="4" sx={{color: '#FFFFFF'}} disableRipple/>
             </TabList> 
           </div>
         

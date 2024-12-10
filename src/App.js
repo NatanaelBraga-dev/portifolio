@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import IconButton from '@mui/material/IconButton';
-import TranslateIcon from '@mui/icons-material/Translate';
 import foto_perfil from './images/foto_perfil.jpeg';
 import LabTabs, { Theme } from './components/interactive_window/janela_interativa';
 import { ThemeProvider } from '@mui/material/styles';
@@ -19,7 +17,6 @@ import {
   LinkedInIconStyled,
   InstagramIconStyled,
   CenteredContainer,
-  ContainerTranslation,
 } from './style.js';
 
 function CircleDivTest({ rotation }) {
@@ -86,13 +83,7 @@ function App() {
     // Atualize o tab atual
     setCurrentTab(newValue);
   };
-  // Animação de digitação
-
-  // Função da tradução da página
-
-  // Hover do material translateIcon
-  const [hover, setHover] = useState(false);
-
+  
   return (
     <DivApp>
       <GlobalStyle />
@@ -129,23 +120,6 @@ function App() {
           <LabTabs onTabChange={handleTabChange}/>
         </CenteredContainer>
       </ThemeProvider>
-
-      <ContainerTranslation>
-        <IconButton disableRipple>
-          <TranslateIcon style={{
-            color: 'white',
-            border: '1px solid green',
-            padding: '20px',
-            backgroundColor: '#1EF1A5BF',
-            borderRadius: '100px',
-            transition: 'box-shadow 0.4s ease-in-out',
-            boxShadow: hover ? ' 0px 0px 6px 8px rgba(30, 241, 165, 0.7)' : 'none',
-          }}
-            onMouseEnter={() => setHover(true)}
-            onMouseLeave={() => setHover(false)}>
-          </TranslateIcon>
-        </IconButton>
-      </ContainerTranslation>
     </DivApp>
   );
 }

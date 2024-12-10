@@ -1,5 +1,4 @@
 import React from "react";
-import '../../../src/i18n.js';
 import { useTranslation } from 'react-i18next';
 import calculadora from '../../images/calculadora.png'
 import print_tela_cadastro from '../../images/print_tela_cadastro.png'
@@ -9,7 +8,6 @@ import Iconcss from '../../icons/Iconcss.png'
 import Iconphp from '../../icons/Iconphp.png'
 import IconMysql from '../../icons/mysql.png'
 import Iconjs from '../../icons/Iconjs.png'
-import Iconpython from '../../icons/Iconpython.png'
 import Iconreact from '../../icons/Iconreact.png'
 import {
     MainDiv,
@@ -22,7 +20,6 @@ import {
 } from './projectTabStyle.js'
 
 function ProjectTab() {
-    const { t } = useTranslation(); // Use o useTranslation para acessar as traduções
 
     return (
         <MainDiv style={{backgroundColor: 'transparent', flexDirection:'row', display:'flex', justifyContent:'space-evenly'}}>
