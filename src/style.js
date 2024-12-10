@@ -65,14 +65,8 @@ export const PresentationText = styled.div`
   font-size: 36px;
   position: relative;
   text-shadow: 0px 4px 4px #1EF1A599;
-`;
-
-export const PresentationText2 = styled.div`
-  font-family: 'JetBrains-Mono', monospace;
-  font-size: 31.5px;
-  position: relative;
-  text-shadow: 0px 4px 4px #1EF1A599;
-  font-weight: 600;
+  background-color: transparent;
+  width: 800px;
 `;
 
 export const ContainerFotoPerfil = styled.div`
