@@ -21,7 +21,7 @@ function AboutMe() {
                 </div>
             </AboutMeContent>
 
-            <div style={{ display: 'flex', color: '#1EF1A5', textDecoration: 'underline', marginTop: '15px' }}>
+            <div style={{ display: 'flex', color: '#1EF1A5', textDecoration: 'underline', paddingTop: '15px' }}>
                 Experience:
             </div>
             <ExperienceContent>
