@@ -4,6 +4,7 @@ import LabTabs, { Theme } from './components/interactive_window/janela_interativ
 import { ThemeProvider } from '@mui/material/styles';
 import Circle from './images/Ellipse.png';
 import { TypeAnimation } from 'react-type-animation';
+import AnchorTemporaryDrawer from "./components/drawer_component/drawerComponent.js";
 import {
   DivApp, 
   GlobalStyle,
@@ -92,10 +93,9 @@ function App() {
     return (
       <DivApp>
         <GlobalStyle />
-        <div style={{ textAlign: "center", padding: "20px", color:'white' }}>
-          <h1>Bem-vindo ao layout móvel</h1>
-          <p>Este é um layout simplificado para dispositivos móveis.</p>
-        </div>
+        <AnchorTemporaryDrawer>
+          
+        </AnchorTemporaryDrawer>
       </DivApp>
     );
   }
