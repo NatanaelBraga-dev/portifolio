@@ -10,6 +10,10 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
+import MenuIcon from '@mui/icons-material/Menu';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 export default function TemporaryDrawer() {
   const [open, setOpen] = React.useState(false);
@@ -31,7 +35,7 @@ export default function TemporaryDrawer() {
         
 
         }} role="presentation" onClick={toggleDrawer(false)} disableRipple>
-          
+
       <List style={{backgroundColor:'#0E0E0E'}}>
         {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
           <ListItem key={text} style={{backgroundColor:'#0E0E0E'}} disablePadding>
@@ -63,8 +67,21 @@ export default function TemporaryDrawer() {
 
   return (
     <div style={{zIndex:'10'}}>
-      <Button onClick={toggleDrawer(true)} disableRipple>Open drawer</Button>
-      <h1 style={{color:'white'}}>oshisohsi</h1>
+
+      <header style={{display:'flex',justifyContent:'space-between'}}>
+        
+        <div style={{display:'flex', padding: '10px 8px', justifyContent:'space-around', width:'80px'}}>
+            <div> <a href="https://www.instagram.com/natanaelbraga7/?next=%2F" target="_blank" rel="noopener noreferrer"><InstagramIcon style={{color:'white'}}/></a> </div>
+            <div> <a href="https://github.com/NatanaelBraga-dev" target="_blank" rel="noopener noreferrer"><GitHubIcon style={{color:'white'}} /></a> </div>
+            <div> <a href="https://www.linkedin.com/in/natanael-braga-2149092b6/" target="_blank" rel="noopener noreferrer"><LinkedInIcon style={{color:'white'}}/></a> </div>
+        </div>
+        
+        <div>
+          <Button onClick={toggleDrawer(true)} style={{padding:"8px 8px"}} disableRipple> <MenuIcon style={{width:'35px', height:'33px', color:'white'}} ></MenuIcon>  </Button >
+        </div>
+      
+      </header>
+      
       <Drawer 
       
       open={open} 
