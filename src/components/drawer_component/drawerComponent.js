@@ -25,7 +25,10 @@ export default function TemporaryDrawer() {
         color: 'white',
         '& .css-20bmp1-MuiSvgIcon-root': {fill:'rgb(255, 255, 255);'},
         '& .css-fh11cx-MuiListItemIcon-root': {color:'rgb(255,255,255);'},
-        '& .css-1bfiel7': {color:'rgb(255,255,255);'}
+        '& .css-1bfiel7': {color:'rgb(255,255,255);'},
+        '& .css-1f8bwsm': {color:'rgb(255,255,255);'},
+        '& .css-gjwoc1': {backgroundColor:'#0E0E0E'},
+        '& .css-na684': {backgroundColor:'#0E0E0E'},
 
         }} role="presentation" onClick={toggleDrawer(false)} disableRipple>
       <List style={{backgroundColor:'#0E0E0E'}}>
