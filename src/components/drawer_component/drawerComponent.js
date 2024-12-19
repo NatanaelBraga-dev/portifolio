@@ -30,7 +30,7 @@ export default function TemporaryDrawer() {
         {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
           <ListItem key={text} style={{backgroundColor:'#0E0E0E'}} disablePadding>
             
-            <ListItemButton style={{backgroundColor:'#0E0E0E'}} >
+            <ListItemButton style={{backgroundColor:'#0E0E0E'}} disableRipple >
               <ListItemIcon sx={{fill:'rgb(255, 255, 255)', backgroundColor: '#0E0E0E'}}>
                 {index % 2 === 0 ? <InboxIcon style={{backgroundColor:'#0E0E0E'}}/> : <MailIcon style={{backgroundColor:'#0E0E0E'}}/>}
               </ListItemIcon>
@@ -43,7 +43,7 @@ export default function TemporaryDrawer() {
       <List style={{backgroundColor:'#0E0E0E'}}>
         {['All mail', 'Trash', 'Spam'].map((text, index) => (
           <ListItem key={text} style={{backgroundColor:'#0E0E0E'}} disablePadding>
-            <ListItemButton style={{backgroundColor:'#0E0E0E'}}>
+            <ListItemButton style={{backgroundColor:'#0E0E0E'}} disableRipple>
               <ListItemIcon style={{backgroundColor:'#0E0E0E'}}>
                 {index % 2 === 0 ? <InboxIcon style={{backgroundColor:'#0E0E0E'}} /> : <MailIcon style={{backgroundColor:'#0E0E0E'}} />}
               </ListItemIcon>
