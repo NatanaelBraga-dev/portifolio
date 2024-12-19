@@ -23,9 +23,10 @@ export default function TemporaryDrawer() {
         
         width: 'fit-content', 
         color: 'white',
-        '& .css-20bmp1-MuiSvgIcon-root': {fill:'rgb(255, 255, 255);'}
+        '& .css-20bmp1-MuiSvgIcon-root': {fill:'rgb(255, 255, 255);'},
+        '& .css-eydqou-MuiPaper-root-MuiDrawer-paper': {backgroundColor: 'rgb(14,14,14)'}
 
-        }} role="presentation" onClick={toggleDrawer(false)}>
+        }} role="presentation" onClick={toggleDrawer(false)} disableRipple>
       <List>
         {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
           <ListItem key={text} disablePadding>
@@ -56,8 +57,8 @@ export default function TemporaryDrawer() {
 
   return (
     <div>
-      <Button onClick={toggleDrawer(true)}>Open drawer</Button>
-      <Drawer open={open} onClose={toggleDrawer(false)}>
+      <Button onClick={toggleDrawer(true)} disableRipple>Open drawer</Button>
+      <Drawer open={open} anchor='right' onClose={toggleDrawer(false)}>
         {DrawerList}
       </Drawer>
     </div>
