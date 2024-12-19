@@ -32,6 +32,15 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
+export const DivAppMobile = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 200vh;
+  text-transform: none;
+  font-family: 'JetBrains-Mono';
+  background-color: #0E0E0E;
+`
+
 export const DivApp = styled.div`
   display: flex;
   flex-direction: column;

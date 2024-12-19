@@ -18,6 +18,7 @@ import {
   LinkedInIconStyled,
   InstagramIconStyled,
   CenteredContainer,
+  DivAppMobile,
 } from './style.js';
 
 function CircleDivTest({ rotation }) {
@@ -91,12 +92,14 @@ function App() {
   if (isMobile) {
     // Layout específico para dispositivos móveis
     return (
-      <DivApp>
-        <GlobalStyle />
-        <AnchorTemporaryDrawer>
+
+        <DivAppMobile>
+          <AnchorTemporaryDrawer>
           
-        </AnchorTemporaryDrawer>
-      </DivApp>
+          </AnchorTemporaryDrawer>
+        </DivAppMobile>
+    
+    
     );
   }
 

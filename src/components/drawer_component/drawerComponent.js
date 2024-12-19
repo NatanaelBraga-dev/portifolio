@@ -20,7 +20,6 @@ export default function TemporaryDrawer() {
 
   const DrawerList = (
     <Box sx={{ 
-        
         width: 'fit-content', 
         color: 'white',
         '& .css-20bmp1-MuiSvgIcon-root': {fill:'rgb(255, 255, 255);'},
@@ -28,9 +27,11 @@ export default function TemporaryDrawer() {
         '& .css-1bfiel7': {color:'rgb(255,255,255);'},
         '& .css-1f8bwsm': {color:'rgb(255,255,255);'},
         '& .css-gjwoc1': {backgroundColor:'#0E0E0E'},
+        '& .css-39bbo6': {borderColor: '#0E0E0E'},
         
 
         }} role="presentation" onClick={toggleDrawer(false)} disableRipple>
+          
       <List style={{backgroundColor:'#0E0E0E'}}>
         {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
           <ListItem key={text} style={{backgroundColor:'#0E0E0E'}} disablePadding>
@@ -44,7 +45,7 @@ export default function TemporaryDrawer() {
           </ListItem>
         ))}
       </List>
-      <Divider style={{backgroundColor:'#0E0E0E'}} />
+      <Divider />
       <List style={{backgroundColor:'#0E0E0E'}}>
         {['All mail', 'Trash', 'Spam'].map((text, index) => (
           <ListItem key={text} style={{backgroundColor:'#0E0E0E'}} disablePadding>
@@ -61,14 +62,20 @@ export default function TemporaryDrawer() {
   );
 
   return (
-    <div>
+    <div style={{zIndex:'10'}}>
       <Button onClick={toggleDrawer(true)} disableRipple>Open drawer</Button>
-      <Drawer open={open} anchor='right' onClose={toggleDrawer(false)} 
+      <h1 style={{color:'white'}}>oshisohsi</h1>
+      <Drawer 
       
+      open={open} 
+      anchor='right' 
+      onClose={toggleDrawer(false)}       
+
       sx={{
         '& .css-na684': {backgroundColor:'#0E0E0E'},
         '& .css-eydqou-MuiPaper-root-MuiDrawer-paper': {backgroundColor: '#0E0E0E'},
         '& .css-1edfpdg-MuiTypography-root': {backgroundColor: '#0E0E0E'}
+        
         }}
       >
         {DrawerList}
