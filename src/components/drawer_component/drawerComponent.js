@@ -24,28 +24,28 @@ export default function TemporaryDrawer() {
         width: 'fit-content', 
         color: 'white',
         '& .css-20bmp1-MuiSvgIcon-root': {fill:'rgb(255, 255, 255);'},
-        '& .css-eydqou-MuiPaper-root-MuiDrawer-paper': {backgroundColor: 'rgb(14,14,14)'}
 
         }} role="presentation" onClick={toggleDrawer(false)} disableRipple>
-      <List>
+      <List style={{backgroundColor:'#0E0E0E'}}>
         {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon sx={{fill:'rgb(255, 255, 255)'}}>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+          <ListItem key={text} style={{backgroundColor:'#0E0E0E'}} disablePadding>
+            
+            <ListItemButton style={{backgroundColor:'#0E0E0E'}} >
+              <ListItemIcon sx={{fill:'rgb(255, 255, 255)', backgroundColor: '#0E0E0E'}}>
+                {index % 2 === 0 ? <InboxIcon style={{backgroundColor:'#0E0E0E'}}/> : <MailIcon style={{backgroundColor:'#0E0E0E'}}/>}
               </ListItemIcon>
-              <ListItemText primary={text} />
+              <ListItemText primary={text} style={{backgroundColor:'#0E0E0E'}}/>
             </ListItemButton>
           </ListItem>
         ))}
       </List>
-      <Divider />
-      <List>
+      <Divider style={{backgroundColor:'#0E0E0E'}} />
+      <List style={{backgroundColor:'#0E0E0E'}}>
         {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+          <ListItem key={text} style={{backgroundColor:'#0E0E0E'}} disablePadding>
+            <ListItemButton style={{backgroundColor:'#0E0E0E'}}>
+              <ListItemIcon style={{backgroundColor:'#0E0E0E'}}>
+                {index % 2 === 0 ? <InboxIcon style={{backgroundColor:'#0E0E0E'}} /> : <MailIcon style={{backgroundColor:'#0E0E0E'}} />}
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItemButton>
@@ -58,7 +58,13 @@ export default function TemporaryDrawer() {
   return (
     <div>
       <Button onClick={toggleDrawer(true)} disableRipple>Open drawer</Button>
-      <Drawer open={open} anchor='right' onClose={toggleDrawer(false)}>
+      <Drawer open={open} anchor='right' onClose={toggleDrawer(false)} 
+      
+      sx={{
+        '& .css-eydqou-MuiPaper-root-MuiDrawer-paper': {backgroundColor: '#0E0E0E'},
+        '& .css-1edfpdg-MuiTypography-root': {backgroundColor: '#0E0E0E'}
+        }}
+      >
         {DrawerList}
       </Drawer>
     </div>
