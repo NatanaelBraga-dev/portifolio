@@ -28,7 +28,7 @@ export default function TemporaryDrawer() {
         '& .css-1bfiel7': {color:'rgb(255,255,255);'},
         '& .css-1f8bwsm': {color:'rgb(255,255,255);'},
         '& .css-gjwoc1': {backgroundColor:'#0E0E0E'},
-        '& .css-na684': {backgroundColor:'#0E0E0E'},
+        
 
         }} role="presentation" onClick={toggleDrawer(false)} disableRipple>
       <List style={{backgroundColor:'#0E0E0E'}}>
@@ -66,6 +66,7 @@ export default function TemporaryDrawer() {
       <Drawer open={open} anchor='right' onClose={toggleDrawer(false)} 
       
       sx={{
+        '& .css-na684': {backgroundColor:'#0E0E0E'},
         '& .css-eydqou-MuiPaper-root-MuiDrawer-paper': {backgroundColor: '#0E0E0E'},
         '& .css-1edfpdg-MuiTypography-root': {backgroundColor: '#0E0E0E'}
         }}
