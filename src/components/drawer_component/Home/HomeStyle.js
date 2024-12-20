@@ -39,6 +39,7 @@ export const PresentationText = styled.div`
   display: flex;
   justify-content: center;
   text-align: center;
+  height: 150px;
 `;
 
 export const ContainerIcon = styled.div`

@@ -14,8 +14,7 @@ ContainerIcon,
 function HomeApp(){
     return(
        
-
-        <BodyContainer id='Home' as='section'>
+        <BodyContainer id='Home' as='section' style={{height:'400px'}}>
              <ContainerFotoPerfil>
                 <FotoPerfil src={foto_perfil}></FotoPerfil>
             </ContainerFotoPerfil>
@@ -41,7 +40,7 @@ function HomeApp(){
 
             </PresentationContainer>
             <ContainerIcon>
-                <ArrowDownwardIcon style={{fill: 'white', marginTop:'150px',width:'30px',height:'30px'}}/>
+                <ArrowDownwardIcon style={{fill: 'white', marginTop:'50px',width:'30px',height:'30px'}}/>
             </ContainerIcon>
         </BodyContainer>
     )

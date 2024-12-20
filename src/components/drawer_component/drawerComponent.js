@@ -17,6 +17,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import CodeIcon from '@mui/icons-material/Code';
 import ComputerIcon from '@mui/icons-material/Computer';
 import PersonIcon from '@mui/icons-material/Person';
+import AboutMeMobile from './aboutMe/aboutMeMobile';
 
 export default function TemporaryDrawer() {
   const [open, setOpen] = React.useState(false);
@@ -54,7 +55,7 @@ export default function TemporaryDrawer() {
           }
         });
       },
-      { threshold: 0.5 } // Define o quanto a seção precisa estar visível (50%)
+      { threshold: 0.6 } // Define o quanto a seção precisa estar visível (50%)
     );
   
     sections.forEach((section) => observer.observe(section));
@@ -132,10 +133,16 @@ export default function TemporaryDrawer() {
       
       </header>
       
-      <body style={{display:"flex", justifyContent:'center', height:"100vh" }}>
+      <body style={{display:"flex", justifyContent:'center', flexDirection: 'column' }}>
+        
         <HomeApp>
 
         </HomeApp> 
+
+        <AboutMeMobile>
+
+        </AboutMeMobile>
+
       </body>
 
       <Drawer 
