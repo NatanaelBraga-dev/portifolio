@@ -29,15 +29,15 @@ export default function TemporaryDrawer() {
   const choosingIcon = (text) => {
     switch(text){
       case 'Home':
-        return <HomeIcon/>
+        return <HomeIcon style={{fill:'white'}}/>
       case 'About Me':
-        return <PersonIcon/>
+        return <PersonIcon style={{fill:'white'}}/>
       case 'Projects':
-        return <ComputerIcon/>
+        return <ComputerIcon style={{fill:'white'}}/>
       case 'Technologies':
-        return <CodeIcon/>
+        return <CodeIcon style={{fill:'white'}}/>
       case 'Certificates':
-        return <BeenhereIcon/>
+        return <BeenhereIcon style={{fill:'white'}}/>
       default:
         return null
     }
