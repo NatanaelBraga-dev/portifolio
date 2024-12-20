@@ -35,9 +35,8 @@ export const PresentationText = styled.div`
   position: relative;
   text-shadow: 0px 4px 4px #1EF1A599;
   background-color: transparent;
-  width: 180px;
+  width: 190px;
   display: flex;
   justify-content: center;
   text-align: center;
 `;
-
