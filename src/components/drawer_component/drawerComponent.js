@@ -68,7 +68,6 @@ export default function TemporaryDrawer() {
           </ListItem>
         ))}
       </List>
-      <Divider />
     </Box>
   );
 
@@ -111,17 +110,17 @@ export default function TemporaryDrawer() {
         sx={{
           '& .css-na684': {
             backgroundColor:'#0E0E0E',
-            borderTopLeftRadius:"50px 40px",
-            borderBottomLeftRadius: "50px 40px ",
-            borderLeft:'rgba(30, 241, 165, 0.3) 1px solid'
+            borderTopLeftRadius:"50px 30px",
+            borderBottomLeftRadius: "50px 30px ",
+            borderLeft:'rgba(30, 241, 165, 0.7) 1px solid'
           },
-          
+
           '& .css-eydqou-MuiPaper-root-MuiDrawer-paper': {
             
             backgroundColor: '#0E0E0E',
-            borderTopLeftRadius:"50px 40px",
-            borderBottomLeftRadius: "50px 40px ",
-            borderLeft:'rgba(30, 241, 165, 0.3) 1px solid'
+            borderTopLeftRadius:"50px 30px",
+            borderBottomLeftRadius: "50px 30px ",
+            borderLeft:'rgba(30, 241, 165, 0.7) 1px solid'
           },
 
           '& .css-1edfpdg-MuiTypography-root': {backgroundColor: '#0E0E0E'}
