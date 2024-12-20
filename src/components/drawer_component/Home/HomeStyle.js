@@ -40,3 +40,10 @@ export const PresentationText = styled.div`
   justify-content: center;
   text-align: center;
 `;
+
+export const ContainerIcon = styled.div`
+  displaY: flex;
+  justify-content: center;
+  align-itens: center;
+  position: sticky;
+`

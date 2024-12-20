@@ -1,11 +1,13 @@
 import foto_perfil from '../../../images/foto_perfil.jpeg';
 import { TypeAnimation } from 'react-type-animation';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import {
 FotoPerfil,
 ContainerFotoPerfil,
 PresentationContainer,
 PresentationText,
 BodyContainer,
+ContainerIcon,
 
 } from './HomeStyle'
 
@@ -38,8 +40,10 @@ function HomeApp(){
                 </PresentationText>
 
             </PresentationContainer>
+            <ContainerIcon>
+                <ArrowDownwardIcon style={{fill: 'white', marginTop:'150px',width:'30px',height:'30px'}}/>
+            </ContainerIcon>
         </BodyContainer>
-    
     )
 }
 
