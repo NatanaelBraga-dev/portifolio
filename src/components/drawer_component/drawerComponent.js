@@ -42,6 +42,27 @@ export default function TemporaryDrawer() {
     }
   }
 
+  const [activeSection, setActiveSection] = React.useState('');
+  React.useEffect(() => {
+    const sections = document.querySelectorAll('section');
+    
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id); // Atualiza a seção ativa
+          }
+        });
+      },
+      { threshold: 0.5 } // Define o quanto a seção precisa estar visível (50%)
+    );
+  
+    sections.forEach((section) => observer.observe(section));
+  
+    return () => observer.disconnect();
+  }, []);
+  
+
   const DrawerList = (
     <Box sx={{ 
         width: 'fit-content', 
@@ -58,12 +79,28 @@ export default function TemporaryDrawer() {
       <List style={{backgroundColor:'#0E0E0E'}}>
         {['Home','About Me', 'Projects', 'Technologies', 'Certificates'].map((text, index) => (
           <ListItem key={text} style={{backgroundColor:'#0E0E0E'}} disablePadding>            
-            <ListItemButton style={{backgroundColor:'#0E0E0E'}} disableRipple >
-              <ListItemText primary={text} style={{backgroundColor:'#0E0E0E'}}/>
-              <ListItemIcon sx={{fill:'rgb(255, 255, 255)', backgroundColor: '#0E0E0E', display:'flex',justifyContent:'end'}}>
-                {choosingIcon(text)}
-              </ListItemIcon>
-            </ListItemButton>
+            <ListItemButton
+                component="a"
+                href={`#${text.replace(' ', '')}`}
+                style={{
+                  backgroundColor: '#0E0E0E',
+                  textDecoration: activeSection === text.replace(' ', '') ? 'underline' : 'none',
+                  color: activeSection === text.replace(' ', '') ? '#1EF1A5' : 'white',
+                }}
+                disableRipple
+              >
+                <ListItemText primary={text} style={{ backgroundColor: '#0E0E0E' }} />
+                <ListItemIcon
+                  sx={{
+                    fill: 'rgb(255, 255, 255)',
+                    backgroundColor: '#0E0E0E',
+                    display: 'flex',
+                    justifyContent: 'end',
+                  }}
+                >
+                  {choosingIcon(text)}
+                </ListItemIcon>
+              </ListItemButton>
           </ListItem>
         ))}
       </List>
@@ -95,7 +132,7 @@ export default function TemporaryDrawer() {
       
       </header>
       
-      <body style={{display:"flex", justifyContent:'center', height:"auto" }}>
+      <body style={{display:"flex", justifyContent:'center', height:"100vh" }}>
         <HomeApp>
 
         </HomeApp> 

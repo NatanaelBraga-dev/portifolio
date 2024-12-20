@@ -15,7 +15,7 @@ function HomeApp(){
     return(
        
 
-        <BodyContainer>
+        <BodyContainer id='Home' as='section'>
              <ContainerFotoPerfil>
                 <FotoPerfil src={foto_perfil}></FotoPerfil>
             </ContainerFotoPerfil>
