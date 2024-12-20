@@ -31,7 +31,7 @@ function HomeApp(){
                          whiteSpace: 'pre-line', 
                          fontSize: '20px', 
                          color:'white', 
-                        
+                         zIndex: 0,
                         }}
                     repeat={Infinity}
                     />

@@ -8,13 +8,16 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import HomeApp from './Home/Home';
+import BeenhereIcon from '@mui/icons-material/Beenhere';
+import HomeIcon from '@mui/icons-material/Home';
+import CodeIcon from '@mui/icons-material/Code';
+import ComputerIcon from '@mui/icons-material/Computer';
+import PersonIcon from '@mui/icons-material/Person';
 
 export default function TemporaryDrawer() {
   const [open, setOpen] = React.useState(false);
@@ -22,6 +25,23 @@ export default function TemporaryDrawer() {
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
   };
+
+  const choosingIcon = (text) => {
+    switch(text){
+      case 'Home':
+        return <HomeIcon/>
+      case 'About Me':
+        return <PersonIcon/>
+      case 'Projects':
+        return <ComputerIcon/>
+      case 'Technologies':
+        return <CodeIcon/>
+      case 'Certificates':
+        return <BeenhereIcon/>
+      default:
+        return null
+    }
+  }
 
   const DrawerList = (
     <Box sx={{ 
@@ -32,37 +52,23 @@ export default function TemporaryDrawer() {
         '& .css-1bfiel7': {color:'rgb(255,255,255);'},
         '& .css-1f8bwsm': {color:'rgb(255,255,255);'},
         '& .css-gjwoc1': {backgroundColor:'#0E0E0E'},
-        '& .css-39bbo6': {borderColor: '#0E0E0E'},
-        
+        '& .css-39bbo6': {borderColor: '#0E0E0E'},       
 
         }} role="presentation" onClick={toggleDrawer(false)} disableRipple>
 
       <List style={{backgroundColor:'#0E0E0E'}}>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem key={text} style={{backgroundColor:'#0E0E0E'}} disablePadding>
-            
+        {['Home','About Me', 'Projects', 'Technologies', 'Certificates'].map((text, index) => (
+          <ListItem key={text} style={{backgroundColor:'#0E0E0E'}} disablePadding>            
             <ListItemButton style={{backgroundColor:'#0E0E0E'}} disableRipple >
-              <ListItemIcon sx={{fill:'rgb(255, 255, 255)', backgroundColor: '#0E0E0E'}}>
-                {index % 2 === 0 ? <InboxIcon style={{backgroundColor:'#0E0E0E'}}/> : <MailIcon style={{backgroundColor:'#0E0E0E'}}/>}
-              </ListItemIcon>
               <ListItemText primary={text} style={{backgroundColor:'#0E0E0E'}}/>
+              <ListItemIcon sx={{fill:'rgb(255, 255, 255)', backgroundColor: '#0E0E0E', display:'flex',justifyContent:'end'}}>
+                {choosingIcon(text)}
+              </ListItemIcon>
             </ListItemButton>
           </ListItem>
         ))}
       </List>
       <Divider />
-      <List style={{backgroundColor:'#0E0E0E'}}>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem key={text} style={{backgroundColor:'#0E0E0E'}} disablePadding>
-            <ListItemButton style={{backgroundColor:'#0E0E0E'}} disableRipple>
-              <ListItemIcon style={{backgroundColor:'#0E0E0E'}}>
-                {index % 2 === 0 ? <InboxIcon style={{backgroundColor:'#0E0E0E'}} /> : <MailIcon style={{backgroundColor:'#0E0E0E'}} />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
     </Box>
   );
 
@@ -76,6 +82,7 @@ export default function TemporaryDrawer() {
          width:'100%',
          borderBottom:'rgba(30, 241, 165, 0.3) 0.2px solid',
          backgroundColor:'#0E0E0E',
+         zIndex: 10,
          }}>
         
         <div style={{display:'flex', padding: '10px 8px', justifyContent:'space-around', width:'80px'}}>
@@ -96,18 +103,25 @@ export default function TemporaryDrawer() {
         </HomeApp> 
       </body>
 
-      
       <Drawer 
-      open={open} 
-      anchor='right' 
-      onClose={toggleDrawer(false)}       
+        open={open} 
+        anchor='right' 
+        onClose={toggleDrawer(false)}       
 
-      sx={{
-        '& .css-na684': {backgroundColor:'#0E0E0E'},
-        '& .css-eydqou-MuiPaper-root-MuiDrawer-paper': {backgroundColor: '#0E0E0E'},
-        '& .css-1edfpdg-MuiTypography-root': {backgroundColor: '#0E0E0E'}
-        
-        }}
+        sx={{
+          '& .css-na684': {backgroundColor:'#0E0E0E'},
+          '& .css-eydqou-MuiPaper-root-MuiDrawer-paper': {
+            
+            backgroundColor: '#0E0E0E',
+            borderTopLeftRadius:"50px 40px",
+            borderBottomLeftRadius: "50px 40px ",
+            borderLeft:'rgba(30, 241, 165, 0.3) 1px solid'
+          },
+
+          '& .css-1edfpdg-MuiTypography-root': {backgroundColor: '#0E0E0E'}
+          
+
+          }}
       >
         {DrawerList}
       </Drawer>
