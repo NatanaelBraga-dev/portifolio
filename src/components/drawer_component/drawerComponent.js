@@ -14,6 +14,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import HomeApp from './Home/Home';
 
 export default function TemporaryDrawer() {
   const [open, setOpen] = React.useState(false);
@@ -66,9 +67,16 @@ export default function TemporaryDrawer() {
   );
 
   return (
-    <div style={{zIndex:'10'}}>
+    <div>
 
-      <header style={{display:'flex',justifyContent:'space-between'}}>
+      <header style={{
+         display:'flex',
+         justifyContent:'space-between',
+         position:'fixed', 
+         width:'100%',
+         borderBottom:'rgba(30, 241, 165, 0.3) 0.2px solid',
+         backgroundColor:'#0E0E0E',
+         }}>
         
         <div style={{display:'flex', padding: '10px 8px', justifyContent:'space-around', width:'80px'}}>
             <div> <a href="https://www.instagram.com/natanaelbraga7/?next=%2F" target="_blank" rel="noopener noreferrer"><InstagramIcon style={{color:'white'}}/></a> </div>
@@ -77,13 +85,19 @@ export default function TemporaryDrawer() {
         </div>
         
         <div>
-          <Button onClick={toggleDrawer(true)} style={{padding:"8px 8px"}} disableRipple> <MenuIcon style={{width:'35px', height:'33px', color:'white'}} ></MenuIcon>  </Button >
+          <Button onClick={toggleDrawer(true)} style={{padding:"8px 8px",}} disableRipple> <MenuIcon style={{width:'35px', height:'33px', color:'white'}} ></MenuIcon>  </Button >
         </div>
       
       </header>
       
-      <Drawer 
+      <body style={{display:"flex", justifyContent:'center', height:"auto" }}>
+        <HomeApp>
+
+        </HomeApp> 
+      </body>
+
       
+      <Drawer 
       open={open} 
       anchor='right' 
       onClose={toggleDrawer(false)}       
