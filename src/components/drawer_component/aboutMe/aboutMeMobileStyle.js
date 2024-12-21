@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const ContainerAboutMe = styled.div`
-    position: relative;
-    top: 240px; /* Desloca o elemento para baixo */
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column; 
     align-items: center;
     text-align:center;
+    margin-bottom: 250px;
 `;
 
 

@@ -6,6 +6,7 @@ export const BodyContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items:center;
+    margin-bottom: 240px;
 `
 
 export const FotoPerfil = styled.img`

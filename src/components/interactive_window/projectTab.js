@@ -1,5 +1,4 @@
 import React from "react";
-import { useTranslation } from 'react-i18next';
 import calculadora from '../../images/calculadora.png'
 import print_tela_cadastro from '../../images/print_tela_cadastro.png'
 import InterfaceLogin from '../../images/InterfaceLogin.png'
