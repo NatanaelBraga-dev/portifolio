@@ -20,6 +20,7 @@ import PersonIcon from '@mui/icons-material/Person';
 import AboutMeMobile from './aboutMe/aboutMeMobile';
 import ProjectsMobile from './Projects/ProjectsMobile';
 import Technologies from './technologies/technologies';
+import Certificates from './certificates/certificates';
 
 export default function TemporaryDrawer() {
   const [open, setOpen] = React.useState(false);
@@ -153,6 +154,9 @@ export default function TemporaryDrawer() {
           
          </Technologies>
 
+         <Certificates>
+          
+         </Certificates>
       </body>
 
       <Drawer 
