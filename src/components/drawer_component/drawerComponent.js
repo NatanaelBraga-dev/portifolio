@@ -19,6 +19,7 @@ import ComputerIcon from '@mui/icons-material/Computer';
 import PersonIcon from '@mui/icons-material/Person';
 import AboutMeMobile from './aboutMe/aboutMeMobile';
 import ProjectsMobile from './Projects/ProjectsMobile';
+import Technologies from './technologies/technologies';
 
 export default function TemporaryDrawer() {
   const [open, setOpen] = React.useState(false);
@@ -147,6 +148,10 @@ export default function TemporaryDrawer() {
          <ProjectsMobile >
           
          </ProjectsMobile>
+
+         <Technologies>
+          
+         </Technologies>
 
       </body>
 

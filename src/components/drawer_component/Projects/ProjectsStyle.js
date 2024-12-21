@@ -8,6 +8,7 @@ export const MainDiv = styled.div`
     overflow-x: hidden; /* Impede scroll horizontal */
     flex-direction: column;
     align-items: center;
+    margin-bottom: 200px;
 `;
 
 export const TitleDiv = styled.div`
