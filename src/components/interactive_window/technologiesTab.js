@@ -11,6 +11,7 @@ import Icongithub from '../../icons/Icongithub.png'
 import Icongit from '../../icons/Icongit.png'
 import Iconfigma from '../../icons/Iconfigma.png'
 import Icondart from '../../icons/Icondart.png'
+
 import{
     MainDiv,
     TechnologiesDiv,
@@ -22,21 +23,21 @@ function TecnologiesTab(){
         <MainDiv>
             <ContainerIcons>
                 <TechnologiesDiv>
-                    <img src={Iconhtml} style={{height:'60px' }}></img>
-                    <img src={Iconcss} style={{height:'60px'}}></img>
-                    <img src={Iconjs} style={{height:'60px'}}></img>
-                    <img src={Iconphp} style={{height:'70px'}}></img>
-                    <img src={IconMysql} style={{height:'64px'}}></img>
-                    <img src={Iconreact} style={{height:'60px'}}></img>
+                    <img src={Iconhtml} alt="HTML" style={{height:'60px'}} />
+                    <img src={Iconcss} alt="CSS" style={{height:'60px'}} />
+                    <img src={Iconjs} alt="JavaScript" style={{height:'60px'}} />
+                    <img src={Iconphp} alt="PHP" style={{height:'70px'}} />
+                    <img src={IconMysql} alt="MySQL" style={{height:'64px'}} />
+                    <img src={Iconreact} alt="React" style={{height:'60px'}} />
                 </TechnologiesDiv>
                 
                 <TechnologiesDiv>
-                    <img src={Iconpython} style={{height:'60px'}}></img>
-                    <img src={Icondart} style={{height:'60px'}}></img>
-                    <img src={Iconfigma} style={{height:'60px'}}></img>
-                    <img src={Iconflutter} style={{height:'60px'}}></img>
-                    <img src={Icongit} style={{height:'60px'}}></img>
-                    <img src={Icongithub} style={{height:'60px'}}></img>
+                    <img src={Iconpython} alt="Python" style={{height:'60px'}} />
+                    <img src={Icondart} alt="Dart" style={{height:'60px'}} />
+                    <img src={Iconfigma} alt="Figma" style={{height:'60px'}} />
+                    <img src={Iconflutter} alt="Flutter" style={{height:'60px'}} />
+                    <img src={Icongit} alt="Git" style={{height:'60px'}} />
+                    <img src={Icongithub} alt="GitHub" style={{height:'60px'}} />
                 </TechnologiesDiv>
             </ContainerIcons>
         </MainDiv>
