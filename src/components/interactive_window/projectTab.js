@@ -25,7 +25,7 @@ function ProjectTab() {
             <ColumnDiv>
                 <AnimatedDiv>
                     <DivImage>
-                        <img onClick={() => window.location.href = "https://github.com/NatanaelBraga-dev/Calculadora"} src={calculadora} style={{width:'350px', borderRadius:'10px', border: '1px solid #1EF1A5B3'}}></img>
+                        <img onClick={() => window.location.href = "https://github.com/NatanaelBraga-dev/Calculadora"} src={calculadora} alt="" style={{width:'350px', borderRadius:'10px', border: '1px solid #1EF1A5B3'}}></img>
                     </DivImage>
 
                     <DivDescription style={{width:'370px', height: '70px', borderRadius:'10px'}} className="description">
@@ -33,16 +33,16 @@ function ProjectTab() {
                         simple calculator software 
                         </ParagraphDescription1>
                         <TechnologiesIconsDiv>
-                            <img src={Iconhtml} style={{height:'24px'}}></img>
-                            <img src={Iconcss} style={{height:'24px'}}></img>
-                            <img src={Iconjs} style={{height:'24px'}}></img>
+                            <img src={Iconhtml} alt="" style={{height:'24px'}}></img>
+                            <img src={Iconcss} alt="" style={{height:'24px'}}></img>
+                            <img src={Iconjs} alt="" style={{height:'24px'}}></img>
                         </TechnologiesIconsDiv>
                     </DivDescription>
                 </AnimatedDiv>
 
                 <AnimatedDiv>
                     <DivImage>
-                        <img onClick={() => window.location.href = "https://github.com/NatanaelBraga-dev/interface-de-Login-com-React.Js"} src={InterfaceLogin} style={{width:'350px', borderRadius:'10px', border: '1px solid #1EF1A5B3', height: '198px'}} ></img>
+                        <img onClick={() => window.location.href = "https://github.com/NatanaelBraga-dev/interface-de-Login-com-React.Js"} alt="" src={InterfaceLogin} style={{width:'350px', borderRadius:'10px', border: '1px solid #1EF1A5B3', height: '198px'}} ></img>
                     </DivImage>
 
                     <DivDescription style={{width:'370px', height: '70px', borderRadius:'10px'}} className="description">
@@ -50,8 +50,8 @@ function ProjectTab() {
                             login interface
                         </ParagraphDescription1>
                         <TechnologiesIconsDiv>
-                            <img src={Iconreact} style={{height:'24px'}}></img>
-                            <img src={Iconcss} style={{height:'24px'}}></img>
+                            <img src={Iconreact} alt="" style={{height:'24px'}}></img>
+                            <img src={Iconcss} alt="" style={{height:'24px'}}></img>
                         </TechnologiesIconsDiv>
                     </DivDescription>
                 </AnimatedDiv>
@@ -60,17 +60,17 @@ function ProjectTab() {
             <ColumnDiv>
             <AnimatedDiv>
                 <DivImage> 
-                    <img onClick={() => window.location.href = "https://github.com/NatanaelBraga-dev/Cadastro-e-Login-funcional"} src={print_tela_cadastro} style={{width:'350px', borderRadius:'10px',border: '1px solid #1EF1A5B3'}}></img>
+                    <img onClick={() => window.location.href = "https://github.com/NatanaelBraga-dev/Cadastro-e-Login-funcional"} alt="" src={print_tela_cadastro} style={{width:'350px', borderRadius:'10px',border: '1px solid #1EF1A5B3'}}></img>
                 </DivImage>
                 <DivDescription style={{width:'370px', height: '70px', borderRadius:'10px'}} className="description">
                     <ParagraphDescription1>
                         registration and functional login
                     </ParagraphDescription1>
                     <TechnologiesIconsDiv>
-                        <img src={Iconhtml} style={{height:'24px'}}></img>
-                        <img src={Iconcss} style={{height:'24px'}}></img>
-                        <img src={Iconphp} style={{height:'34px'}}></img>
-                        <img src={IconMysql} style={{height:'28px'}}></img>
+                        <img src={Iconhtml} alt="" style={{height:'24px'}}></img>
+                        <img src={Iconcss} alt="" style={{height:'24px'}}></img>
+                        <img src={Iconphp} alt="" style={{height:'34px'}}></img>
+                        <img src={IconMysql} alt="" style={{height:'28px'}}></img>
                     </TechnologiesIconsDiv>                    
                 </DivDescription>
             </AnimatedDiv>
@@ -84,7 +84,7 @@ function ProjectTab() {
                             developing...
                         </ParagraphDescription1>
                         <TechnologiesIconsDiv>
-                            <img src={Iconreact} style={{height:'24px'}}></img>
+                            <img src={Iconreact} alt="" style={{height:'24px'}}></img>
                         </TechnologiesIconsDiv>                    
                     </DivDescription>
                 </AnimatedDiv>     
