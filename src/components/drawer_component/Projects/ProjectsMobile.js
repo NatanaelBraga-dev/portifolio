@@ -42,9 +42,9 @@ function ProjectsMobile() {
                     <DivDescription className="description">
                         <ParagraphDescription1>Simple calculator software</ParagraphDescription1>
                         <TechnologiesIconsDiv>
-                            <img src={Iconhtml} style={{height:'20px'}}></img>
-                            <img src={Iconcss} style={{height:'20px'}}></img>
-                            <img src={Iconjs} style={{height:'20px'}}></img>
+                            <img src={Iconhtml} alt="HTML" style={{height:'20px'}}></img>
+                            <img src={Iconcss} alt="CSS" style={{height:'20px'}}></img>
+                            <img src={Iconjs} alt="JS" style={{height:'20px'}}></img>
                         </TechnologiesIconsDiv>
                     </DivDescription>
                 </AnimatedDiv>
@@ -63,8 +63,8 @@ function ProjectsMobile() {
                     <DivDescription className="description">
                         <ParagraphDescription1>Login Interface</ParagraphDescription1>
                         <TechnologiesIconsDiv>
-                            <img src={Iconreact} style={{height:'20px'}}></img>
-                            <img src={Iconcss} style={{height:'20px'}}></img>
+                            <img src={Iconreact} alt="React" style={{height:'20px'}}></img>
+                            <img src={Iconcss} alt="CSS" style={{height:'20px'}}></img>
                         </TechnologiesIconsDiv>
                     </DivDescription>
                 </AnimatedDiv>
@@ -85,10 +85,10 @@ function ProjectsMobile() {
                     <DivDescription className="description">
                         <ParagraphDescription1>registration and functional login</ParagraphDescription1>
                         <TechnologiesIconsDiv>
-                            <img src={Iconhtml} style={{height:'20px'}}></img>
-                            <img src={Iconcss} style={{height:'20px'}}></img>
-                            <img src={Iconphp} style={{height:'20px'}}></img>
-                            <img src={IconMysql} style={{height:'20px'}}></img>
+                            <img src={Iconhtml} alt="HTML" style={{height:'20px'}}></img>
+                            <img src={Iconcss} alt="Css" style={{height:'20px'}}></img>
+                            <img src={Iconphp} alt="PHP" style={{height:'20px'}}></img>
+                            <img src={IconMysql} alt="MySQL" style={{height:'20px'}}></img>
                         </TechnologiesIconsDiv>
                     </DivDescription>
                 </AnimatedDiv>
@@ -112,7 +112,7 @@ function ProjectsMobile() {
                             developing...
                         </ParagraphDescription2>
                         <TechnologiesIconsDiv>
-                            <img src={Iconreact} style={{height:'20px'}}></img>
+                            <img src={Iconreact} alt="React" style={{height:'20px'}}></img>
                         </TechnologiesIconsDiv>                    
                     </DivDescription>
                 </ContainerEmptyDiv>
